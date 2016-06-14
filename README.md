@@ -4,7 +4,7 @@ This code implements a trading strategy based on ARIMA models. For each day, the
 
 The following chart shows the returns, when compared to the Buy-and-hold strategy:
 
-![alt text](https://raw.githubusercontent.com/bolorsociedad/ARIMA-trading-strategy/master/Returns.png "Returns of the ARIM strategy when compared to the Buy & Hold strategy")
+![alt text](https://raw.githubusercontent.com/bolorsociedad/ARIMA-trading-strategy/master/Returns.png "Returns of the ARIMA strategy when compared to the Buy & Hold strategy")
 
 In the 2000-2008 period, the ARIMA strategy reported returns of about 10000%, which clearly outpermorms the Buy-and-hold strategy.
 
