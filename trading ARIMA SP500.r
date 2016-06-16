@@ -34,10 +34,10 @@ for (i in (T+1):(length(GSPC)-1)) {
   dateStart<-time(GSPC[i-T]);
   dateEnd<-time(GSPC[i]);
   data.ts<-diff(log(window(GSPC, start=dateStart, end=dateEnd)));
-  pq<-selectArima(ts.ts);
+  pq<-selectArima(data.ts);
   p=pq[1];
   q=pq[2];
-  fit<-arima(ts.ts, c(p, 0, q));
+  fit<-arima(data.ts, c(p, 0, q));
   p=as.numeric(forecast(fit,h=1)[4])-as.numeric(data.ts[length(data.ts)]);
   
   margin<-0.1;
